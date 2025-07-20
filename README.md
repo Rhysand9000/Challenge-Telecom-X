@@ -97,6 +97,6 @@ pip install -r requirements.txt
 
 ## 🤝 Autor
 
-**Nombre del estudiante**  
+Renzo Echevarria 
 Desafío de Ciencia de Datos – Telecom X  
 🔗 [Repositorio en GitHub](https://github.com/tu-usuario/telecom-x-churn-analysis)
