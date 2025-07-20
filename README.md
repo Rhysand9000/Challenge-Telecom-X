@@ -23,50 +23,65 @@ Este proyecto forma parte del desafío **Telecom X**, cuyo objetivo es analizar 
 
 ---
 
+## 📂 Estructura del Proyecto
+
+```text
+telecom-x-churn-analysis/
+│
+├── data/             # Archivos de datos (JSON original)
+├── notebooks/        # Notebooks con análisis y visualizaciones
+├── reports/          # Imágenes exportadas, informes PDF
+├── scripts/          # Funciones o procesos de limpieza reutilizables
+├── README.md         # Este archivo
+└── requirements.txt  # Librerías necesarias para reproducir el proyecto 
+```
+
+---
+
 ## 🧪 Etapas del Análisis
 
 ### 1. 📥 Extracción y Carga de Datos
 - Los datos fueron importados desde un archivo JSON alojado en GitHub.
-- Estructuras anidadas fueron aplanadas con `json_normalize`.
+- Se normalizaron estructuras anidadas con `json_normalize`.
 
 ### 2. 🧹 Limpieza y Transformación
 - Conversión de tipos (`Charges.Monthly`, `tenure`).
 - Eliminación de duplicados y valores nulos.
-- Conversión de variables `Yes/No` a `1/0` y a texto para gráficos.
+- Conversión de variables `Yes/No` a `1/0` y a texto para visualización.
 - Traducción y estandarización de nombres de columnas.
 - Cálculo de columna `Facturacion_Diaria`.
 
 ### 3. 📊 Análisis Exploratorio de Datos (EDA)
-- Distribución general de evasión (churn).
-- Gráficos de evasión por género, contrato y método de pago.
-- Análisis de churn según variables numéricas como facturación total y tiempo de contrato.
+- Distribución general de evasión.
+- Gráficos de evasión por género, tipo de contrato y método de pago.
+- Análisis de churn según variables numéricas como facturación total y duración del contrato.
 
 ### 4. 📈 Análisis de Correlación (Opcional)
 - Matriz de correlación de variables numéricas.
-- Relación entre cantidad de servicios contratados y churn.
-- Correlación entre facturación diaria y evasión.
+- Relación entre la cuenta diaria y la evasión.
+- Análisis de cómo la cantidad de servicios contratados afecta el churn.
 
 ### 5. 📋 Informe Final
-- Incluye introducción, limpieza, EDA, conclusiones, recomendaciones y análisis opcional de correlación.
-- Generado dentro del mismo notebook.
+- Resumen detallado dentro del mismo notebook con visualizaciones.
+- Incluye conclusiones y recomendaciones estratégicas.
 
 ---
 
 ## 💡 Principales Hallazgos
 
-- Clientes con **contrato mensual** tienen una tasa de evasión significativamente mayor.
+- Los clientes con **contrato mensual** tienen mayor tasa de evasión.
 - Usuarios con **menos servicios contratados** tienden a cancelar más.
-- La **facturación total y mensual** influye menos en la evasión que el tiempo de permanencia.
-- Se detectan más cancelaciones durante los **primeros meses de servicio**.
+- La **facturación total o mensual** influye menos que la **duración del contrato**.
+- Mayor proporción de cancelaciones ocurre en los **primeros meses**.
 
 ---
 
 ## 🧠 Recomendaciones
 
-- Promover contratos anuales con beneficios adicionales.
-- Crear campañas de fidelización dirigidas a nuevos clientes.
-- Monitorear usuarios con bajo uso de servicios para intervenir antes de que cancelen.
-- Utilizar estos hallazgos para construir un modelo predictivo de churn.
+- Ofrecer descuentos o beneficios por contratar servicios anuales.
+- Lanzar campañas dirigidas a nuevos clientes con menor uso de servicios.
+- Detectar perfiles con alto riesgo de cancelación de forma temprana.
+- Aplicar los insights en modelos predictivos de churn.
 
 ---
 
@@ -76,3 +91,12 @@ Instala las dependencias necesarias con:
 
 ```bash
 pip install -r requirements.txt
+```
+
+---
+
+## 🤝 Autor
+
+**Nombre del estudiante**  
+Desafío de Ciencia de Datos – Telecom X  
+🔗 [Repositorio en GitHub](https://github.com/tu-usuario/telecom-x-churn-analysis)
