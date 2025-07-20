@@ -27,12 +27,12 @@ Este proyecto forma parte del desafío **Telecom X**, cuyo objetivo es analizar 
 
 telecom-x-churn-analysis/
 │
-├── data/ # Archivos de datos (JSON original)
-├── notebooks/ # Notebooks con análisis y visualizaciones
-├── reports/ # Imágenes exportadas, informes PDF
-├── scripts/ # Funciones o procesos de limpieza reutilizables
-├── README.md # Este archivo
-└── requirements.txt # Librerías necesarias para reproducir el proyecto
+├── data/             # Archivos de datos (JSON original)
+├── notebooks/        # Notebooks con análisis y visualizaciones
+├── reports/          # Imágenes exportadas, informes PDF
+├── scripts/          # Funciones o procesos de limpieza reutilizables
+├── README.md         # Este archivo
+└── requirements.txt  # Librerías necesarias para reproducir el proyecto 
 
 
 ---
